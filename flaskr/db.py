@@ -22,7 +22,7 @@ def init_db():
 def init_db_command():
     """Clear the existing data and create new tables."""
     init_db()
-    click.echo('Initialized the database:', current_app.config['DATABASE'])
+    click.echo('Initialized the database:' + str(current_app.config['DATABASE']))
 
 
 def get_db():
